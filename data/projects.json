@@ -1,0 +1,80 @@
+[
+  {
+    "logo": "/svg/tc.svg",
+    "name": "TalkCare",
+    "platform": "Mobile",
+    "desc": "Social networking mobile application aimed at health professionals, to discuss their life in healthcare.",
+    "timeFrame": "July 2021 - Jan 2022",
+    "status": "Beta Testing",
+    "role": "Solo designed, developed and the front end of the mobile application, whilst also acting as a de facto project manager for the build.",
+    "stack": [
+      "React Native/React",
+      "TypeScript",
+      "Expo",
+      "Redux",
+      "XCode",
+      "Android Studio",
+      "TailwindCSS"
+    ],
+    "screenshot": "/svg/tcPhone.svg",
+    "link": "https://talkcare.co.uk"
+  },
+  {
+    "logo": "/svg/ra.svg",
+    "name": "Rudy & Aurora",
+    "platform": "Web",
+    "desc": "A baby loss awareness blog, built for my wife to openly discuss her experiences with baby loss and as a contact point for people coping with the same struggles.",
+    "timeFrame": "March 2021 - March 2021",
+    "status": "In Production",
+    "role": "Designed and developed the site, built with love for my wife and my baby girls.",
+    "stack": [
+      "React",
+      "TypeScript",
+      "Gatsby",
+      "Prismic",
+      "Styled Components",
+      "Netlify"
+    ],
+    "screenshot": "/svg/raLaptop.svg",
+    "link": "https://rudyandaurora.com"
+  },
+  {
+    "logo": "/svg/nwf.svg",
+    "logoStyles": "text-green font-dafoe",
+    "name": "New  Woods Farm",
+    "platform": "Web",
+    "desc": "A brochure site for an award-winning Ryeland Sheep breeder, small holding and hand-made crafts store.",
+    "timeFrame": "December 2021 - December 2021",
+    "status": "In Production",
+    "role": "Designed and developed the site, with a lot of help from TailwindUI.",
+    "stack": [
+      "React",
+      "TypeScript",
+      "NextJS",
+      "Contentul",
+      "TailwindCSS",
+      "Netlify"
+    ],
+    "screenshot": "/svg/nwfLaptop.svg",
+    "link": "https://newwoodsfarm.com"
+  },
+  {
+    "logo": "/svg/dd.svg",
+    "name": "Dementia Dictionary",
+    "platform": "Mobile",
+    "desc": "A forum for professionals and family to dicuss their experiences with dealing with people with dementia.",
+    "timeFrame": "May 2021 - June 2021",
+    "status": "In Production",
+    "role": "Solo designed, developed and the front end of the mobile application, whilst also acting as a de facto project manager for the build.",
+    "stack": [
+      "React Native",
+      "TypeScript",
+      "Expo",
+      "Redux",
+      "XCode",
+      "Android Studio"
+    ],
+    "screenshot": "/svg/ddPhone.svg",
+    "link": ""
+  }
+]
