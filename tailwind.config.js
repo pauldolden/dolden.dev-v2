@@ -12,6 +12,7 @@ module.exports = {
         confetti: "url(/svg/confetti.svg)",
         forcefields: "url(/svg/forcefields.svg)",
         "forcefields-alt": "url(/svg/forcefields-alt.svg)",
+        "forcefields-pink": "url(/svg/forcefields-pink.svg)",
         phone: "url(/svg/phone.svg)",
         laptop: "url(/svg/laptop.svg)",
       },

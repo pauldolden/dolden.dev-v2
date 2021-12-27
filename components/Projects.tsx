@@ -17,7 +17,7 @@ export const Projects = forwardRef((props: Props, ref: ForwardedRef<any>) => {
       />
 
       <div
-        className="bg-gradient-to-r from-primary-400 to-secondary-400 min-h-[90vh] shadow-inner flex flex-col justify-center"
+        className="bg-forcefields-pink min-h-[90vh] shadow-inner flex flex-col justify-center"
         ref={inViewRef}
       >
         {inView && (
