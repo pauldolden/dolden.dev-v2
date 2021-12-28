@@ -17,7 +17,8 @@
       "TailwindCSS"
     ],
     "screenshot": "/svg/tcPhone.svg",
-    "link": "https://talkcare.co.uk"
+    "link": "https://talkcare.co.uk",
+    "hex": "bg-tc"
   },
   {
     "logo": "/svg/ra.svg",
@@ -36,7 +37,8 @@
       "Netlify"
     ],
     "screenshot": "/svg/raLaptop.svg",
-    "link": "https://rudyandaurora.com"
+    "link": "https://rudyandaurora.com",
+    "hex": "bg-acaba"
   },
   {
     "logo": "/svg/nwf.svg",
@@ -56,7 +58,8 @@
       "Netlify"
     ],
     "screenshot": "/svg/nwfLaptop.svg",
-    "link": "https://newwoodsfarm.com"
+    "link": "https://newwoodsfarm.com",
+    "hex": "bg-green-400"
   },
   {
     "logo": "/svg/dd.svg",
@@ -75,6 +78,7 @@
       "Android Studio"
     ],
     "screenshot": "/svg/ddPhone.svg",
-    "link": ""
+    "link": "https://dementiadictionary.com",
+    "hex": "bg-dd"
   }
 ]

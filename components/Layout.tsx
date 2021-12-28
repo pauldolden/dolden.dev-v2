@@ -12,7 +12,7 @@ export const Layout = ({ children }: Props) => {
     <>
       <Head />
       <Header />
-      <main className="bg-forcefields-alt min-h-screen">{children}</main>
+      <main className="min-h-screen">{children}</main>
       <Footer />
     </>
   );

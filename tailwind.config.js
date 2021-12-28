@@ -5,16 +5,14 @@ module.exports = {
   ],
   theme: {
     extend: {
-      fonFamily: {
-        logo: "logo",
+      fontFamily: {
+        fathur: "fathur",
       },
       backgroundImage: {
-        confetti: "url(/svg/confetti.svg)",
         forcefields: "url(/svg/forcefields.svg)",
         "forcefields-alt": "url(/svg/forcefields-alt.svg)",
-        "forcefields-pink": "url(/svg/forcefields-pink.svg)",
-        phone: "url(/svg/phone.svg)",
-        laptop: "url(/svg/laptop.svg)",
+        pink: "url(/svg/pink.svg)",
+        blob: "url(/svg/blob.svg)",
       },
       colors: {
         primary: {
@@ -22,7 +20,7 @@ module.exports = {
           100: "#FF4FC4",
           200: "#FF35AA",
           300: "#F11C91",
-          400: "#D70277",
+          400: "#ED017A",
           500: "#BE005E",
           600: "#A40044",
           700: "#8B002B",
@@ -54,6 +52,8 @@ module.exports = {
           900: "#008080",
         },
         background: "#00001E",
+        purpleop: "rgba(36, 0, 87, 0.6)",
+        pinkop: "rgba(237, 1, 122, .6)",
       },
     },
   },

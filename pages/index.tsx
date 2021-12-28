@@ -11,7 +11,10 @@ export default function Home() {
 
   return (
     <div className="pt-20 bg-transparent">
-      <Hero triggerScroll={() => projectsRef?.current?.scrollIntoView(true)} />
+      <Hero
+        triggerScrollProjects={() => projectsRef?.current?.scrollIntoView()}
+        triggerScrollAbout={() => aboutRef?.current?.scrollIntoView()}
+      />
       <Projects ref={projectsRef} />
       <About ref={aboutRef} />
       <BlogPreview ref={blogPreviewRef} />

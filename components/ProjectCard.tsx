@@ -12,6 +12,8 @@ export const ProjectCard = ({ data }: Props) => {
   return (
     <a href={data.link} target="_blank">
       <ReactCardFlip
+        flipSpeedBackToFront={0.2}
+        flipSpeedFrontToBack={0.2}
         isFlipped={hover}
         containerClassName="flex-1"
         cardStyles={{
@@ -30,11 +32,15 @@ export const ProjectCard = ({ data }: Props) => {
           // whileHover={{ scale: 1.2, transition: { duration: 0.2 } }}
           className="bg-gradient-to-r from-secondary-400 to-tertiary-400 p-1 flex rounded-lg cursor-pointer h-[435px]"
         >
-          <div className="rounded-lg shadow-sm bg-white p-4 flex flex-col flex-1">
+          <div
+            className={`rounded-lg shadow-sm bg-white p-4 flex flex-col flex-1 ${data.hex}`}
+          >
             <div className="flex-1 flex flex-col justify-between">
               <div className="flex flex-col">
                 <img src={data.logo} className="h-[70px]" />
-                <p className="mt-4 text-sm text-gray-900">{data.desc}</p>
+                <p className="mt-4 text-sm text-gray-900 text-center">
+                  {data.desc}
+                </p>
               </div>
             </div>
             <div

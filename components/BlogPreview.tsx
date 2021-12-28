@@ -69,19 +69,17 @@ export const BlogPreview = forwardRef(
 
     return (
       <>
-        <div
-          className="w-screen h-2 bg-gradient-to-r from-secondary-400 to-tertiary-400 "
-          ref={ref}
-        />
+        <div ref={ref} />
+        <img src="/svg/slope3.svg" alt="slope" />
 
         <div
-          className="bg-forcefields min-h-[90vh] shadow-inner flex flex-col justify-center"
+          className="bg-purpleop min-h-[90vh] flex flex-col justify-center"
           ref={inViewRef}
         >
           {inView && (
             <motion.div
               animate={{ opacity: [0, 1] }}
-              className="max-w-7xl mx-auto py-24 px-4 sm:px-6 lg:px-8"
+              className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"
             >
               <div className="sm:flex sm:flex-col sm:align-center">
                 <h1 className="text-7xl font-extrabold text-white sm:text-center">
@@ -101,7 +99,7 @@ export const BlogPreview = forwardRef(
             </motion.div>
           )}
         </div>
-        <div className="w-screen h-2 bg-gradient-to-r from-tertiary-400 to-secondary-400" />
+        <img src="/svg/slope4.svg" alt="slope" />
       </>
     );
   }

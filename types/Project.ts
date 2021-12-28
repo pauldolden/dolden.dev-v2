@@ -10,4 +10,5 @@ export interface Project {
   stack?: string[];
   screenshot?: string;
   link?: string;
+  hex?: string;
 }
