@@ -7,12 +7,15 @@ module.exports = {
     extend: {
       fontFamily: {
         fathur: "fathur",
+        rubik: "Rubik",
       },
       backgroundImage: {
         forcefields: "url(/svg/forcefields.svg)",
         "forcefields-alt": "url(/svg/forcefields-alt.svg)",
         pink: "url(/svg/pink.svg)",
         blob: "url(/svg/blob.svg)",
+        meteor: "url(/svg/meteor.svg)",
+        test: "url(/svg/test.svg)",
       },
       colors: {
         primary: {

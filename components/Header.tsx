@@ -5,18 +5,20 @@ import Link from "next/link";
 import { Logo } from "@/components/Logo";
 import { motion } from "framer-motion";
 
+const BASE_DELAY = 0.2;
+
 interface Props {}
 
 const navigation = [
   {
     name: "blog",
-    link: "/blog",
-    delay: 6,
+    link: "https://blog.dolden.dev",
+    delay: BASE_DELAY + 2.5,
   },
   {
     name: "cv",
-    link: "/cv",
-    delay: 5,
+    link: "https://docs.google.com/document/d/1KfwUoLRyA_zPCazuq7SEW12BLk6KsulDYFi0qClGZSQ/edit",
+    delay: BASE_DELAY + 2,
   },
 ];
 
@@ -25,25 +27,25 @@ const social = [
     name: "twitter",
     icon: <FiTwitter size={35} />,
     link: "https://twitter.com/pauldolden",
-    delay: 4,
+    delay: BASE_DELAY + 1.5,
   },
   {
     name: "github",
     icon: <FiGithub size={35} />,
     link: "https://github.com/pauldolden",
-    delay: 3,
+    delay: BASE_DELAY + 1,
   },
   {
     name: "linkedin",
     icon: <FiLinkedin size={35} />,
     link: "https://linkedin.com/in/pauldolden",
-    delay: 2,
+    delay: BASE_DELAY + 0.5,
   },
   {
     name: "email",
     icon: <FiMail size={35} />,
     link: "mailto:paul@dolden.dev",
-    delay: 1,
+    delay: BASE_DELAY,
   },
 ];
 
@@ -54,8 +56,7 @@ export const Header = (props: Props) => {
         <motion.div
           animate={{ x: [-200, 0], opacity: [0, 1] }}
           transition={{
-            delay: 7 / 6,
-            x: { type: "spring", stiffness: 100 },
+            delay: BASE_DELAY + 3,
             default: { duration: 0.2 },
           }}
         >
@@ -64,12 +65,11 @@ export const Header = (props: Props) => {
         <div className="flex gap-14">
           <div className="flex gap-6 items-center">
             {navigation.map((item) => (
-              <Link href={item.link} key={item.name}>
+              <a href={item.link} key={item.name} target="_blank">
                 <motion.p
                   animate={{ x: [-200, 0], opacity: [0, 1] }}
                   transition={{
-                    delay: item.delay / 6,
-                    x: { type: "spring", stiffness: 100 },
+                    delay: item.delay,
                     default: { duration: 0.5 },
                   }}
                   whileHover={{ scale: 1.2, transition: { duration: 0.4 } }}
@@ -77,17 +77,16 @@ export const Header = (props: Props) => {
                 >
                   {item.name}
                 </motion.p>
-              </Link>
+              </a>
             ))}
           </div>
           <div className="flex gap-6 items-center">
             {social.map((item) => (
-              <a href={item.link} key={item.link}>
+              <a href={item.link} key={item.link} target="_blank">
                 <motion.div
                   animate={{ x: [-200, 0], opacity: [0, 1] }}
                   transition={{
-                    delay: item.delay / 6,
-                    x: { type: "spring", stiffness: 100 },
+                    delay: item.delay,
                     default: { duration: 0.2 },
                   }}
                 >

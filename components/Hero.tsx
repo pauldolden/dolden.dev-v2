@@ -13,7 +13,7 @@ export const Hero = ({ triggerScrollProjects, triggerScrollAbout }: Props) => {
       className="min-h-[90vh] flex justify-center flex-col"
       animate={{ opacity: [0, 1] }}
       transition={{
-        delay: 0,
+        delay: 0.5,
         default: { duration: 0.4 },
       }}
     >
@@ -21,7 +21,7 @@ export const Hero = ({ triggerScrollProjects, triggerScrollAbout }: Props) => {
         <h2 className="text-7xl font-extrabold text-white">
           <div>
             Hi, I'm{" "}
-            <span className="font-extrabold text-7xl font-fathur text-transparent bg-clip-text bg-gradient-to-r from-primary-400 to-secondary-400 p-2">
+            <span className="font-extrabold text-7xl font-fathur text-transparent bg-clip-text bg-gradient-to-r from-primary-400 to-secondary-400 p-2 shadow-lg	">
               Paul Dolden
             </span>
           </div>

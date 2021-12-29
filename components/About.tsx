@@ -54,19 +54,23 @@ export const About = forwardRef(
               <div className="sm:flex sm:flex-col sm:align-center">
                 <h2 className="text-7xl font-extrabold text-white sm:text-center">
                   More About Me
-                  <div className="text-5xl flex relative justify-center font-extrabold text-white sm:text-center">
+                  <motion.div
+                    animate={{ opacity: [0, 1], x: [-200, 0] }}
+                    transition={{ delay: 1, duration: 0.2 }}
+                    className="text-5xl flex relative justify-center font-extrabold text-white sm:text-center"
+                  >
                     <span>(This Guy, Right Here)</span>
                     <img
                       src="/svg/arrow.svg"
                       className="h-[200px] absolute left-[75%]"
                     />
-                  </div>
+                  </motion.div>
                 </h2>
               </div>
 
               <div className="mt-16 space-y-4 sm:mt-16 sm:space-y-0 lg:max-w-4xl lg:mx-auto xl:max-w-none xl:mx-0 grid grid-cols-3">
-                <div className="col-span-2 text-white text-xl font-medium mr-4 ">
-                  <h3 className="font-extrabold text-3xl">
+                <div className="col-span-2 text-white text-xl font-medium mr-4">
+                  <h3 className="font-extrabold text-3xl ">
                     The Personal Stuff
                   </h3>
                   <p className="mt-4">
