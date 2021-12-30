@@ -49,31 +49,33 @@ export const About = forwardRef(
           {inView && (
             <motion.div
               animate={{ opacity: [0, 1] }}
-              className="max-w-7xl mx-auto py-24 px-4 sm:px-6 lg:px-8"
+              className="max-w-7xl mx-auto py-24 px-4 sm:px-6 lg:px-8 flex flex-col"
             >
-              <div className="sm:flex sm:flex-col sm:align-center">
-                <h2 className="text-7xl font-extrabold text-white sm:text-center">
+              <div className=" text-center sm:flex sm:flex-col sm:align-center">
+                <h2 className="text-5xl lg:text-7xl font-extrabold text-white sm:text-center">
                   More About Me
                   <motion.div
                     animate={{ opacity: [0, 1], x: [-200, 0] }}
                     transition={{ delay: 1, duration: 0.2 }}
                     className="text-5xl flex relative justify-center font-extrabold text-white sm:text-center"
                   >
-                    <span>(This Guy, Right Here)</span>
+                    <span className="text-5xl lg:text-7xl">
+                      (This Guy, Right Here)
+                    </span>
                     <img
                       src="/svg/arrow.svg"
-                      className="h-[200px] absolute left-[75%]"
+                      className="h-[100px] lg:h-[200px] absolute left-[45%] lg:left-[75%] top-[100px]"
                     />
                   </motion.div>
                 </h2>
               </div>
 
-              <div className="mt-16 space-y-4 sm:mt-16 sm:space-y-0 lg:max-w-4xl lg:mx-auto xl:max-w-none xl:mx-0 grid grid-cols-3">
-                <div className="col-span-2 text-white text-xl font-medium mr-4">
+              <div className="mt-16 sm:mt-16 lg:max-w-4xl lg:mx-auto xl:max-w-none xl:mx-0 grid grid-cols-1 lg:grid-cols-3">
+                <div className="col-span-2 text-white text-xl font-medium mr-4 order-2 lg:order-1 text-center md:text-left">
                   <h3 className="font-extrabold text-3xl ">
                     The Personal Stuff
                   </h3>
-                  <p className="mt-4">
+                  <p className="mt-4 ">
                     Hello, I'm Paul. A developer from Essex, UK. I enjoy lots of
                     things, but do very few of them. Mostly I just code and hang
                     out with my wife, kid and dog. I learned to code by
@@ -85,11 +87,13 @@ export const About = forwardRef(
                     Media, in Witham, Essex, working on bespoke mobile
                     applications. My passion, however, remains the web.
                   </p>
-                  <div className="mt-4">
-                    <h3 className="font-extrabold text-3xl">Toolkit</h3>
-                    <div className="grid grid-cols-3 gap-3 mt-4">
+                  <div className="mt-4 flex flex-col items-center md:items-start">
+                    <h3 className="font-extrabold text-3xl md:self-start">
+                      Toolkit
+                    </h3>
+                    <div className="grid grid-cols-2 md:grid-cols-3 gap-x-20 gap-4 mt-4">
                       {toolkit.map((item) => (
-                        <div className="flex items-start">
+                        <div className="flex items-center justify-start">
                           <GradientIcon
                             name={item.name}
                             icon={item.icon}
@@ -104,13 +108,12 @@ export const About = forwardRef(
                     </div>
                   </div>
                 </div>
-                <div className="bg-gradient-to-r from-secondary-400 to-tertiary-400 p-2 rounded-[50px]">
-                  <img
-                    src="/svg/PD.svg"
-                    alt="Paul Dolden"
-                    className="h-full w-full"
-                  />
-                </div>
+
+                <img
+                  src="/svg/PD.svg"
+                  alt="Paul Dolden"
+                  className="h-[300px] md:h-[500px] lg:h-auto my-4 order-1 lg:order-2 mx-auto"
+                />
               </div>
             </motion.div>
           )}

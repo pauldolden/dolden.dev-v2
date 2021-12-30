@@ -12,8 +12,8 @@ export const Projects = forwardRef(
 
     return (
       <>
-        <div ref={ref} />
         <img src="/svg/slope.svg" alt="slope" />
+        <div ref={ref} />
         <div
           className="bg-pinkop opacity min-h-[90vh] flex flex-col justify-center"
           ref={inViewRef}
@@ -25,16 +25,16 @@ export const Projects = forwardRef(
                 className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"
               >
                 <div className="sm:flex sm:flex-col sm:align-center">
-                  <h1 className="text-7xl font-extrabold text-white sm:text-center">
+                  <h1 className="text-5xl md:text-7xl text-center font-extrabold text-white sm:text-center">
                     Stuff I've Built
                   </h1>
-                  <p className="mt-5 text-xl text-white sm:text-center">
+                  <p className="mt-5 text-xl text-center text-white sm:text-center">
                     Here's some of the things I've been working on recently, or
                     just stuff that I'm proud of.
                   </p>
                 </div>
 
-                <div className="mt-12 space-y-4 sm:mt-16 sm:space-y-0 sm:grid sm:grid-cols-2 sm:gap-6 lg:max-w-4xl lg:mx-auto xl:max-w-none xl:mx-0 xl:grid-cols-4">
+                <div className="mt-12 space-y-4 sm:mt-16 sm:space-y-0 sm:grid sm:grid-cols-2 gap-6 lg:max-w-4xl lg:mx-auto xl:max-w-none xl:mx-0 xl:grid-cols-4">
                   {projects.map((project) => (
                     <ProjectCard key={project.name} data={project} />
                   ))}

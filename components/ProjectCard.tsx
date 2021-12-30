@@ -18,7 +18,7 @@ export const ProjectCard = ({ data }: Props) => {
         flipSpeedBackToFront={0.2}
         flipSpeedFrontToBack={0.2}
         isFlipped={hover}
-        containerClassName="flex-1"
+        containerClassName="flex-1 my-3"
         cardStyles={{
           front: {
             flex: 1,

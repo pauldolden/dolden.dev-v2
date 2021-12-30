@@ -26,7 +26,7 @@ export const Button = (props: Props) => {
         props.altColor
           ? "bg-gradient-to-r from-tertiary-600 to-primary-400"
           : "bg-gradient-to-r from-primary-400 to-secondary-400"
-      } mt-10 px-10 py-6 text-white font-extrabold text-3xl rounded-md flex flex-col items-center justify-center w-[350px]`}
+      } mt-10 text-white font-extrabold  py-4 rounded-md flex flex-col flex-1 items-center justify-center lg:w-[350px] lg:text-3xl`}
       {...props}
     >
       {!hover ? (
