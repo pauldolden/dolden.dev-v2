@@ -2,9 +2,9 @@ import React, { useState } from "react";
 import { motion } from "framer-motion";
 
 interface Props extends React.HTMLProps<HTMLButtonElement> {
-  altColor?: boolean;
+  altcolor?: boolean;
   text?: string;
-  hoverText?: string;
+  hovertext?: string;
 }
 
 export const Button = (props: Props) => {
@@ -23,7 +23,7 @@ export const Button = (props: Props) => {
       // @ts-ignore
       type="button"
       className={`${
-        props.altColor
+        props.altcolor
           ? "bg-gradient-to-r from-tertiary-600 to-primary-400"
           : "bg-gradient-to-r from-primary-400 to-secondary-400"
       } mt-10 text-white font-extrabold  py-4 rounded-md flex flex-col flex-1 items-center justify-center lg:w-[350px] lg:text-3xl`}
@@ -36,7 +36,7 @@ export const Button = (props: Props) => {
           animate={{ rotateX: 360 }}
           transition={{ type: "spring", duration: 0.7 }}
         >
-          {props.hoverText}
+          {props.hovertext}
         </motion.span>
       )}
     </motion.button>

@@ -52,26 +52,26 @@ export const About = forwardRef(
               className="max-w-7xl mx-auto py-24 px-4 sm:px-6 lg:px-8 flex flex-col"
             >
               <div className=" text-center sm:flex sm:flex-col sm:align-center">
-                <h2 className="text-5xl lg:text-7xl font-extrabold text-white sm:text-center">
+                <h2 className="text-4xl lg:text-6xl font-extrabold text-white sm:text-center">
                   More About Me
                   <motion.div
                     animate={{ opacity: [0, 1], x: [-200, 0] }}
                     transition={{ delay: 1, duration: 0.2 }}
-                    className="text-5xl flex relative justify-center font-extrabold text-white sm:text-center"
+                    className="hidden text-5xl lg:flex relative justify-center font-extrabold text-white sm:text-center"
                   >
-                    <span className="text-5xl lg:text-7xl">
+                    <span className="text-4xl lg:text-5xl">
                       (This Guy, Right Here)
                     </span>
                     <img
                       src="/svg/arrow.svg"
-                      className="h-[100px] lg:h-[200px] absolute left-[45%] lg:left-[75%] top-[100px]"
+                      className="absolute h-[250px] right-[20%] top-[20px]"
                     />
                   </motion.div>
                 </h2>
               </div>
 
-              <div className="mt-16 sm:mt-16 lg:max-w-4xl lg:mx-auto xl:max-w-none xl:mx-0 grid grid-cols-1 lg:grid-cols-3">
-                <div className="col-span-2 text-white text-xl font-medium mr-4 order-2 lg:order-1 text-center md:text-left">
+              <div className="mt-4 lg:mt-16 lg:max-w-4xl lg:mx-auto xl:max-w-none xl:mx-0 grid grid-cols-1 lg:grid-cols-3">
+                <div className="col-span-2 text-white text-xl font-medium order-2 lg:order-1 lg:mr-10">
                   <h3 className="font-extrabold text-3xl ">
                     The Personal Stuff
                   </h3>
@@ -93,7 +93,10 @@ export const About = forwardRef(
                     </h3>
                     <div className="grid grid-cols-2 md:grid-cols-3 gap-x-20 gap-4 mt-4">
                       {toolkit.map((item) => (
-                        <div className="flex items-center justify-start">
+                        <div
+                          key={item.name}
+                          className="flex items-center justify-start"
+                        >
                           <GradientIcon
                             name={item.name}
                             icon={item.icon}

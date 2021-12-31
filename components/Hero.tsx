@@ -31,15 +31,15 @@ export const Hero = ({ triggerScrollProjects, triggerScrollAbout }: Props) => {
         </h2>
         <div className="flex gap-4 w-full">
           <Button
-            altColor
+            altcolor
             onClick={triggerScrollProjects}
             text="Stuff I've Built"
-            hoverText="Let's Go 👇"
+            hovertext="Let's Go 👇"
           />
           <Button
             onClick={triggerScrollAbout}
             text="Who I Am"
-            hoverText="Let's Go 👇"
+            hovertext="Let's Go 👇"
           />
         </div>
       </div>

@@ -25,7 +25,7 @@ export const Projects = forwardRef(
                 className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"
               >
                 <div className="sm:flex sm:flex-col sm:align-center">
-                  <h1 className="text-5xl md:text-7xl text-center font-extrabold text-white sm:text-center">
+                  <h1 className="text-4xl md:text-6xl text-center font-extrabold text-white sm:text-center">
                     Stuff I've Built
                   </h1>
                   <p className="mt-5 text-xl text-center text-white sm:text-center">
