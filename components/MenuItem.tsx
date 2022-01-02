@@ -30,7 +30,7 @@ export const MenuItem = ({ data, isOpen }: Props) => {
       variants={variants}
       whileHover={{ scale: 1.1 }}
       whileTap={{ scale: 0.95 }}
-      className={`flex gap-2 items-center ${!isOpen ? "hidden" : ""}`}
+      className={`flex gap-2 items-center ${!isOpen ? "hidden" : ""} menu-li`}
     >
       {data.icon && data.icon}
       <a
