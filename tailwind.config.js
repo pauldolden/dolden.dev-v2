@@ -10,7 +10,7 @@ module.exports = {
         rubik: "Rubik",
       },
       backgroundPosition: {
-        fix: "calc(50% - 1px)",
+        fix: "0 0",
       },
       backgroundImage: {
         forcefields: "url(/svg/forcefields.svg)",

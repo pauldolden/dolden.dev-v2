@@ -36,6 +36,7 @@ export const MenuItem = ({ data, isOpen }: Props) => {
       <a
         className={`font-extrabold text-transarent text-2xl bg-clip-text bg-gradient-to-r from-tertiary-400 to-primary-400 cursor-pointer`}
         href={data.link}
+        target="_blank"
       >
         {data.name}
       </a>

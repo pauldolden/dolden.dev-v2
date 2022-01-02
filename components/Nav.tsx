@@ -44,9 +44,9 @@ const navigation = [
     icon: <FiLinkedin size={25} />,
     link: "https://linkedin.com/in/pauldolden",
   },
-  // {
-  //   name: "email",
-  //   icon: <FiMail size={35} />,
-  //   link: "mailto:paul@dolden.dev",
-  // },
+  {
+    name: "email",
+    icon: <FiMail size={35} />,
+    link: "mailto:paul@dolden.dev",
+  },
 ];
