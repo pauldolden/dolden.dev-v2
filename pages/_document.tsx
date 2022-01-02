@@ -10,7 +10,7 @@ class MyDocument extends Document {
     return (
       <Html>
         <Head />
-        <body className="bg-blob bg-repeat-y bg-fix overflow-x-hidden font-rubik text-white">
+        <body className="bg-blob bg-repeat-y bg-fix transform-gpu overflow-x-hidden font-rubik text-white">
           <Main />
           <NextScript />
         </body>
