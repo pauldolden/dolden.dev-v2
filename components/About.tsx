@@ -21,6 +21,9 @@ import {
   SiGithub,
   SiRedux,
   SiExpo,
+  SiFigma,
+  SiNetlify,
+  SiContentful,
 } from "react-icons/si";
 import { useInView } from "react-intersection-observer";
 import { GradientIcon } from "./GradientIcon";
@@ -28,21 +31,24 @@ import { GradientIcon } from "./GradientIcon";
 interface Props {}
 
 const toolkit = [
-  { name: "HTML", icon: <SiHtml5 size={35} /> },
-  { name: "CSS", icon: <SiCss3 size={35} /> },
-  { name: "JavaScript", icon: <SiJavascript size={35} /> },
-  { name: "React", icon: <SiReact size={35} /> },
-  { name: "Redux", icon: <SiRedux size={35} /> },
-  { name: "React-Native", icon: <SiReact size={35} /> },
-  { name: "Expo", icon: <SiExpo size={35} /> },
-  { name: "NextJS", icon: <SiNextdotjs size={35} /> },
-  { name: "Gatsby", icon: <SiGatsby size={35} /> },
-  { name: "NodeJS", icon: <SiNodedotjs size={35} /> },
-  { name: "Tailwind-CSS", icon: <SiTailwindcss size={35} /> },
-  { name: "Sass/Scss", icon: <SiSass size={35} /> },
-  { name: "MongoDB", icon: <SiMongodb size={35} /> },
-  { name: "PostgreSQL", icon: <SiPostgresql size={35} /> },
-  { name: "Git/Github", icon: <SiGithub size={35} /> },
+  { name: "HTML", icon: <SiHtml5 /> },
+  { name: "CSS", icon: <SiCss3 /> },
+  { name: "JavaScript", icon: <SiJavascript /> },
+  { name: "React", icon: <SiReact /> },
+  { name: "Redux", icon: <SiRedux /> },
+  { name: "React-Native", icon: <SiReact /> },
+  { name: "Expo", icon: <SiExpo /> },
+  { name: "NextJS", icon: <SiNextdotjs /> },
+  { name: "Gatsby", icon: <SiGatsby /> },
+  { name: "NodeJS", icon: <SiNodedotjs /> },
+  { name: "Tailwind-CSS", icon: <SiTailwindcss /> },
+  { name: "Sass/Scss", icon: <SiSass /> },
+  { name: "Figma", icon: <SiFigma /> },
+  { name: "Netlify", icon: <SiNetlify /> },
+  { name: "Contentful", icon: <SiContentful /> },
+  { name: "MongoDB", icon: <SiMongodb /> },
+  { name: "PostgreSQL", icon: <SiPostgresql /> },
+  { name: "Git/Github", icon: <SiGithub /> },
 ];
 
 export const About = forwardRef(
@@ -112,6 +118,7 @@ export const About = forwardRef(
                         >
                           {cloneElement(item.icon, {
                             className: "text-primary-400",
+                            size: 35,
                           })}
                           <p className="ml-4 text-xl">
                             {item.name.replace("-", " ")}
