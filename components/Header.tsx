@@ -19,7 +19,7 @@ export const Header = () => {
             initial={{ y: -200 }}
             animate={{ y: 0 }}
             exit={{ y: -200 }}
-            className="fixed text-whie top-7 right-7"
+            className="fixed text-whie top-7 right-7 z-20"
           >
             <BiArrowToTop
               size={50}
