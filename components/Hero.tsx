@@ -21,8 +21,8 @@ export const Hero = ({ triggerScrollProjects, triggerScrollAbout }: Props) => {
         <h2 className="text-7xl font-extrabold text-white">
           <div className="text-4xl lg:text-7xl">
             Hi, I'm{" "}
-            <span className="font-extrabold  font-fathur text-transparent bg-clip-text bg-gradient-to-r from-primary-400 to-secondary-400 p-2 shadow-lg	">
-              Paul Dolden
+            <span className="font-extrabold  font-fathur text-primary-400  p-2 shadow-lg	">
+              Paul
             </span>
           </div>
           <div className="pt-4 text-4xl lg:text-7xl">

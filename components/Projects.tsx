@@ -1,5 +1,11 @@
 import { motion } from "framer-motion";
-import React, { ForwardedRef, forwardRef, MutableRefObject } from "react";
+import React, {
+  ForwardedRef,
+  forwardRef,
+  MutableRefObject,
+  useEffect,
+  useState,
+} from "react";
 import { useInView } from "react-intersection-observer";
 import projects from "@/data/projects.json";
 import { ProjectCard } from "./ProjectCard";
@@ -9,6 +15,13 @@ interface Props {}
 export const Projects = forwardRef(
   (props: Props, ref: MutableRefObject<HTMLDivElement>) => {
     const [inViewRef, inView] = useInView();
+    const [show, setShow] = useState(false);
+
+    useEffect(() => {
+      if (inView) {
+        setShow(true);
+      }
+    }, [inView]);
 
     return (
       <>
@@ -19,7 +32,7 @@ export const Projects = forwardRef(
           ref={inViewRef}
         >
           <div className="flex flex-col justify-center flex-1" ref={inViewRef}>
-            {inView && (
+            {show && (
               <motion.div
                 animate={{ opacity: [0, 1] }}
                 className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"

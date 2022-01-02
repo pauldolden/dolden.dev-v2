@@ -1,5 +1,11 @@
 import { motion } from "framer-motion";
-import React, { forwardRef, MutableRefObject } from "react";
+import React, {
+  cloneElement,
+  forwardRef,
+  MutableRefObject,
+  useEffect,
+  useState,
+} from "react";
 import {
   SiReact,
   SiHtml5,
@@ -42,11 +48,18 @@ const toolkit = [
 export const About = forwardRef(
   (props: Props, ref: MutableRefObject<HTMLDivElement>) => {
     const [inViewRef, inView] = useInView();
+    const [show, setShow] = useState(false);
+
+    useEffect(() => {
+      if (inView) {
+        setShow(true);
+      }
+    }, [inView]);
 
     return (
       <div ref={ref} className="min-h-screen flex flex-col justify-center">
         <div ref={inViewRef}>
-          {inView && (
+          {show && (
             <motion.div
               animate={{ opacity: [0, 1] }}
               className="max-w-7xl mx-auto py-24 px-4 sm:px-6 lg:px-8 flex flex-col"
@@ -97,12 +110,9 @@ export const About = forwardRef(
                           key={item.name}
                           className="flex items-center justify-start"
                         >
-                          <GradientIcon
-                            name={item.name}
-                            icon={item.icon}
-                            from="#D70277"
-                            to="#55FFFF"
-                          />
+                          {cloneElement(item.icon, {
+                            className: "text-primary-400",
+                          })}
                           <p className="ml-4 text-xl">
                             {item.name.replace("-", " ")}
                           </p>

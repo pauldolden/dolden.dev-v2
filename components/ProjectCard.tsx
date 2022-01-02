@@ -33,11 +33,11 @@ export const ProjectCard = ({ data }: Props) => {
         <motion.div
           onMouseEnter={() => setHover(true)}
           // whileHover={{ scale: 1.2, transition: { duration: 0.2 } }}
-          className="bg-gradient-to-r from-tertiary-400 to-secondary-400 p-2 flex flex-col rounded-lg cursor-pointer h-[475px]"
+          className="bg-tertiary-400 p-2 flex flex-col rounded-lg cursor-pointer h-[475px]"
         >
           <div className="self-end flex gap-2 p-1 pb-3">
-            <AiFillMinusCircle size={15} className="text-secondary-100" />
-            <AiFillCloseCircle size={15} className="text-primary-100" />
+            <AiFillMinusCircle size={15} className="text-secondary-400" />
+            <AiFillCloseCircle size={15} className="text-primary-400" />
           </div>
 
           <div className="flex flex-1 bg-background p-[3px]">
@@ -67,11 +67,11 @@ export const ProjectCard = ({ data }: Props) => {
         <motion.div
           onMouseLeave={() => setHover(false)}
           // whileHover={{ scale: 1.2, transition: { duration: 0.2 } }}
-          className="bg-gradient-to-r from-tertiary-400 to-secondary-400 p-2 flex flex-col rounded-lg cursor-pointer h-[475px]"
+          className="bg-tertiary-400 p-2 flex flex-col rounded-lg cursor-pointer h-[475px]"
         >
           <div className="self-end flex gap-2 p-1 pb-3">
-            <AiFillMinusCircle size={15} className="text-secondary-100" />
-            <AiFillCloseCircle size={15} className="text-primary-100" />
+            <AiFillMinusCircle size={15} className="text-secondary-400" />
+            <AiFillCloseCircle size={15} className="text-primary-400" />
           </div>
 
           <div className="flex flex-1 bg-background p-[3px]">
