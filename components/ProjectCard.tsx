@@ -13,7 +13,7 @@ interface Props {
 export const ProjectCard = ({ data }: Props) => {
   const [hover, setHover] = useState(false);
   return (
-    <a href={data.link} target="_blank">
+    <div>
       <ReactCardFlip
         flipSpeedBackToFront={0.2}
         flipSpeedFrontToBack={0.2}
@@ -73,42 +73,44 @@ export const ProjectCard = ({ data }: Props) => {
             <AiFillMinusCircle size={15} className="text-secondary-400" />
             <AiFillCloseCircle size={15} className="text-primary-400" />
           </div>
-
-          <div className="flex flex-1 bg-background p-[3px]">
-            <div
-              className={`shadow-sm bg-background p-2 flex flex-col flex-1 `}
-            >
-              <h2 className="mt-4 text-lg font-extrabold text-white">
-                {data.name}
-              </h2>
-              <p className="mt-4 text-xs font-extrabold text-white">
-                {data.timeFrame}
-              </p>
-              <p className="mt-4 text-xs font-extrabold text-white">
-                Plaform: {data.platform}
-              </p>
-
-              <p className="mt-4 text-xs font-extrabold text-white">
-                Status: {data.status}
-              </p>
-
-              <p className="mt-4 text-sm text-white">{data.role}</p>
-              <h3
-                className={`text-md leading-6 font-extrabold text-white mt-5`}
+          <a href={data.link} target="_blank" className="flex flex-1">
+            <div className="flex flex-1 bg-background p-[3px]">
+              <div
+                className={`shadow-sm bg-background p-2 flex flex-col flex-1 `}
               >
-                Tech Stack
-              </h3>
-              <ul className="mt-3 list-disc ml-4 grid grid-cols-2">
-                {data.stack.map((item) => (
-                  <li key={item} className="text-sm text-white">
-                    {item}
-                  </li>
-                ))}
-              </ul>
+                <h2 className="mt-4 text-lg font-extrabold text-white">
+                  {data.name}
+                </h2>
+
+                <p className="mt-4 text-xs font-extrabold text-white">
+                  {data.timeFrame}
+                </p>
+                <p className="mt-4 text-xs font-extrabold text-white">
+                  Plaform: {data.platform}
+                </p>
+
+                <p className="mt-4 text-xs font-extrabold text-white">
+                  Status: {data.status}
+                </p>
+
+                <p className="mt-4 text-sm text-white">{data.role}</p>
+                <h3
+                  className={`text-md leading-6 font-extrabold text-white mt-5`}
+                >
+                  Tech Stack
+                </h3>
+                <ul className="mt-3 list-disc ml-4 grid grid-cols-2">
+                  {data.stack.map((item) => (
+                    <li key={item} className="text-sm text-white">
+                      {item}
+                    </li>
+                  ))}
+                </ul>
+              </div>
             </div>
-          </div>
+          </a>
         </motion.div>
       </ReactCardFlip>
-    </a>
+    </div>
   );
 };

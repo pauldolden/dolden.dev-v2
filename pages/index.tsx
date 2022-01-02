@@ -6,7 +6,6 @@ import { useRef } from "react";
 export default function Home() {
   const projectsRef = useRef<HTMLDivElement>(null);
   const aboutRef = useRef<HTMLDivElement>(null);
-  const blogPreviewRef = useRef<HTMLDivElement>(null);
 
   return (
     <div className="pt-20 bg-transparent">

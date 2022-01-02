@@ -33,6 +33,7 @@ export const Menu = () => {
       initial={false}
       animate={isOpen ? "open" : "closed"}
       ref={containerRef}
+      className={`${!isOpen ? "h-[0px]" : ""}`}
     >
       <motion.div className="background" variants={sidebar} />
       <Nav isOpen={isOpen} />

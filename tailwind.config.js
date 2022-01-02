@@ -9,6 +9,9 @@ module.exports = {
         fathur: "fathur",
         rubik: "Rubik",
       },
+      backgroundPosition: {
+        fix: "calc(50% - 1px)",
+      },
       backgroundImage: {
         forcefields: "url(/svg/forcefields.svg)",
         "forcefields-alt": "url(/svg/forcefields-alt.svg)",

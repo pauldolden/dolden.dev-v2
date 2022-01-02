@@ -85,7 +85,7 @@ export const About = forwardRef(
 
               <div className="mt-4 lg:mt-16 lg:max-w-4xl lg:mx-auto xl:max-w-none xl:mx-0 grid grid-cols-1 lg:grid-cols-3">
                 <div className="col-span-2 text-white text-xl font-medium order-2 lg:order-1 lg:mr-10">
-                  <h3 className="font-extrabold text-3xl ">
+                  <h3 className="font-extrabold text-center md:text-left text-3xl ">
                     The Personal Stuff
                   </h3>
                   <p className="mt-4 ">
@@ -101,7 +101,7 @@ export const About = forwardRef(
                     applications. My passion, however, remains the web.
                   </p>
                   <div className="mt-4 flex flex-col items-center md:items-start">
-                    <h3 className="font-extrabold text-3xl md:self-start">
+                    <h3 className="font-extrabold text-3xl text-left md:self-start">
                       Toolkit
                     </h3>
                     <div className="grid grid-cols-2 md:grid-cols-3 gap-x-20 gap-4 mt-4">
