@@ -90,7 +90,7 @@ export const About = forwardRef(
               </div>
 
               <div className="mt-4 lg:mt-16 lg:max-w-4xl lg:mx-auto xl:max-w-none xl:mx-0 grid grid-cols-1 lg:grid-cols-3">
-                <div className="col-span-2 text-white text-xl font-medium order-2 lg:order-1 lg:mr-10">
+                <div className="col-span-2 text-white text-l md:text-xl font-medium order-2 lg:order-1 lg:mr-10">
                   <h3 className="font-extrabold text-center md:text-left text-3xl ">
                     The Personal Stuff
                   </h3>
@@ -117,10 +117,10 @@ export const About = forwardRef(
                           className="flex items-center justify-start"
                         >
                           {cloneElement(item.icon, {
-                            className: "text-primary-400",
-                            size: 35,
+                            className:
+                              "text-primary-400 w-[20px] h-[20px] md:w-[35px] md:h-[35px]",
                           })}
-                          <p className="ml-4 text-xl">
+                          <p className="ml-4 text-l md:text-xl">
                             {item.name.replace("-", " ")}
                           </p>
                         </div>

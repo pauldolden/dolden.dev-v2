@@ -11,7 +11,7 @@ export const Footer = (props: Props) => {
           &copy; Paul Dolden, {date.getFullYear()}.
         </p>
         <p className="text-white font-extrabold text-center">
-          Powered by the colour pink.
+          Sponsored by the colour pink.
         </p>
         <p className="text-white font-extrabold text-center">
           Built by Paul Dolden.
